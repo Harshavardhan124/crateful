@@ -44,9 +44,7 @@ export default function Home() {
             {/* <input  value={email} onChange={e => setEmail(e.target.value)} type="text"  />
             <button onClick={() => onNotify()}>Nofity</button> */}
             {submitted ? (
-              <div className={styles.thanksMessage}>
-                <p>Thanks! We'll notify you when we launch.</p>
-              </div>
+              <p className={styles.thanksMessage}>Thanks! We'll notify you when we launch.</p>
             ) : (
               <div className={styles.notifyContainer}>
                 <input
@@ -56,13 +54,14 @@ export default function Home() {
                   placeholder="Enter your email"
                   className={styles.emailInput}
                 />
-                <div className={styles.seperator} />
-                <button 
-                  onClick={onNotify}
-                  className={styles.notifyButton}
-                >
-                  Notify Me
-                </button>
+                <div className={styles.seperator}>
+                  <button 
+                    onClick={onNotify}
+                    className={styles.notifyButton}
+                  >
+                    Notify Me
+                  </button>
+                </div>
               </div>
             )}
           </div>

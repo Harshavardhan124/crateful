@@ -73,9 +73,8 @@
 }
 
 .seperator {
-  height: 100%;
-  width: 1px;
-  border: 1px solid #dfdada;
+  padding-left: 10px;
+  border-left: 2px solid #dfdada;
 }
 
 .emailInput {
@@ -102,9 +101,16 @@
   letter-spacing: normal;
 }
 
+.thanksMessage {
+  color: #afdf92;
+  line-height: 47px;
+  font-size: 18px;
+}
+
 @media (max-width: 600px) {
   .bodyWrapper {
     margin-bottom: 300px;
+    margin-left: 5px;
   }
 
   .page {
@@ -123,6 +129,11 @@
     margin-top: 14px;
   }
 
+  .seperator {
+    padding-left: 5px;
+    border-left: 1px solid #dfdada;
+  }
+
   .notifyContainer {
     padding: 10px 14px;
     width: 85%;
@@ -136,6 +147,12 @@
   }
 
   .notifyButton {
+    font-size: 12px;
+  }
+
+  .thanksMessage {
+    color: #afdf92;
+    line-height: 35px;
     font-size: 12px;
   }
 }

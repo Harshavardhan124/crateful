@@ -44,7 +44,7 @@ export default function Home() {
             {/* <input  value={email} onChange={e => setEmail(e.target.value)} type="text"  />
             <button onClick={() => onNotify()}>Nofity</button> */}
             {submitted ? (
-              <p className={styles.thanksMessage}>Thanks! We'll notify you when we launch.</p>
+              <p className={styles.thanksMessage}>Thanks! We&apos;ll notify you when we launch.</p>
             ) : (
               <div className={styles.notifyContainer}>
                 <input
